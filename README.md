@@ -1,10 +1,10 @@
-# Zeet-co Zeet
+# Zeet Homebrew Tap
 
 ## How do I install these formulae?
 
-`brew install zeet-co/zeet/<formula>`
+`brew install zeet-co/tap/<formula>`
 
-Or `brew tap zeet-co/zeet` and then `brew install <formula>`.
+Or `brew tap zeet-co/tap` and then `brew install <formula>`.
 
 ## Documentation
 
