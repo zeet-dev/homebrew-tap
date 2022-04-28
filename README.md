@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install zeet-co/tap/<formula>`
+`brew install zeet-dev/tap/<formula>`
 
-Or `brew tap zeet-co/tap` and then `brew install <formula>`.
+Or `brew tap zeet-dev/tap` and then `brew install <formula>`.
 
 ## Documentation
 
