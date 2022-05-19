@@ -5,20 +5,20 @@
 class Zeet < Formula
   desc "The Zeet CLI"
   homepage "https://zeet.co"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zeet-dev/cli/releases/download/v0.2.0/zeet_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "b23b0ad3c2b529b65ca7541d97f0a1952cb484843076ec3ae8c96af12516dba9"
+      url "https://github.com/zeet-dev/cli/releases/download/v0.3.0/zeet_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "ed5fa33365ff3a824265888fc1b278b8c6e1653dca91dd4e0ef3edc3d90c73d3"
 
       def install
         bin.install "zeet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zeet-dev/cli/releases/download/v0.2.0/zeet_0.2.0_darwin_arm64.tar.gz"
-      sha256 "f452ede7f57a52e03a93df186712afcd5d8aa388789216b78303431a283a68b0"
+      url "https://github.com/zeet-dev/cli/releases/download/v0.3.0/zeet_0.3.0_darwin_arm64.tar.gz"
+      sha256 "47970969e48831eee88d96aa6e005d079451297fb44edf7d2a68566272411572"
 
       def install
         bin.install "zeet"
@@ -27,25 +27,25 @@ class Zeet < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zeet-dev/cli/releases/download/v0.2.0/zeet_0.2.0_linux_arm64.tar.gz"
-      sha256 "8e5edcb952366436789eb23b51cb4f0a6301bf0afd5c450ec4f6a23fab9999d7"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/zeet-dev/cli/releases/download/v0.3.0/zeet_0.3.0_linux_armv6.tar.gz"
+      sha256 "6f6fed3f598ab158cece788c55860199b62bf85f2b73598e8e52d0335ebfd4ce"
 
       def install
         bin.install "zeet"
       end
     end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/zeet-dev/cli/releases/download/v0.2.0/zeet_0.2.0_linux_armv6.tar.gz"
-      sha256 "edd5e719747a4286a700eaf53193c611262ee83140bf90c20eb6f0b484ee9a88"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/zeet-dev/cli/releases/download/v0.3.0/zeet_0.3.0_linux_arm64.tar.gz"
+      sha256 "3ab37de3e7d51db0510c011da38c0c6768fde378dc5cfd7a6e49e46e0aa72b52"
 
       def install
         bin.install "zeet"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zeet-dev/cli/releases/download/v0.2.0/zeet_0.2.0_linux_x86_64.tar.gz"
-      sha256 "3ecca0678872116b8e0e2cc001aa3104d1d5249fe69bcc09247ae24e92a10253"
+      url "https://github.com/zeet-dev/cli/releases/download/v0.3.0/zeet_0.3.0_linux_x86_64.tar.gz"
+      sha256 "960bb8e0cbcb1ae965f9c5dd80fb64dea55f600ea09cfb826c65120d25f67963"
 
       def install
         bin.install "zeet"
