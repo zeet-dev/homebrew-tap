@@ -7,9 +7,9 @@ class Zeet < Formula
   homepage "https://zeet.co"
   version "0.4.1"
 
-  head do {
+  head do
     url "https://github.com/zeet-dev/cli.git", :branch => "develop"
-  }
+  end
 
   on_macos do
     if Hardware::CPU.intel?
