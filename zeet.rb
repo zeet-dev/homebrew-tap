@@ -8,7 +8,7 @@ class Zeet < Formula
   version "0.4.1"
 
   head do
-    url "https://github.com/zeet-dev/cli.git", :branch => "develop"
+    url "https://github.com/zeet-dev/cli.git", :branch => "main"
   end
 
   on_macos do
