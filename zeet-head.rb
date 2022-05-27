@@ -7,6 +7,8 @@ class ZeetHead < Formula
   homepage "https://zeet.co"
   version "0.4.1"
 
+  depends_on "go" => :build
+
   head do
     url "https://github.com/zeet-dev/cli.git", :branch => "main"
   end
