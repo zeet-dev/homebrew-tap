@@ -9,7 +9,7 @@ class Zeet < Formula
   head "https://github.com/zeet-dev/cli.git", branch: "main"
 
   def install
-    bin.install "program"
+    bin.install "zeet"
   end
 
   on_macos do
