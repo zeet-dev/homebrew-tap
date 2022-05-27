@@ -9,7 +9,6 @@ class ZeetHead < Formula
 
   head do
     url "https://github.com/zeet-dev/cli.git", :branch => "main"
-    depends_on "go" => :build
   end
 
   def install
