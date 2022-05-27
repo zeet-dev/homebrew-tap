@@ -8,10 +8,6 @@ class Zeet < Formula
   version "0.4.1"
   head "https://github.com/zeet-dev/cli.git", branch: "main"
 
-  def install
-    bin.install "zeet"
-  end
-
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zeet-dev/cli/releases/download/v0.4.1/zeet_0.4.1_darwin_x86_64.tar.gz"
