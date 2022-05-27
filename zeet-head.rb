@@ -15,7 +15,13 @@ class ZeetHead < Formula
 
   def install
     if build.head?
-        system "go", "build", *std_go_args
+        ENV["GOPATH"] = buildpath
+
+        bin_path = buildpath/"src/github.com/zeet-dev/cli"
+        bin_path.install Dir["*"]
+        cd bin_path do
+          system "go", "build", "-o", bin/"zeet-head", "."
+        end
       end
     end
 end
