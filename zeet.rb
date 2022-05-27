@@ -7,10 +7,6 @@ class Zeet < Formula
   homepage "https://zeet.co"
   version "0.4.1"
 
-  head do
-    url "https://github.com/zeet-dev/cli.git", :branch => "main"
-  end
-
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zeet-dev/cli/releases/download/v0.4.1/zeet_0.4.1_darwin_x86_64.tar.gz"
@@ -54,12 +50,6 @@ class Zeet < Formula
       def install
         bin.install "zeet"
       end
-    end
-  end
-
-  def install
-    if build.head?
-      system "go", "build", *std_go_args
     end
   end
 end
