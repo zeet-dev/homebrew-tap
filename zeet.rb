@@ -8,6 +8,9 @@ class Zeet < Formula
   version "0.4.1"
   head "https://github.com/zeet-dev/cli.git", branch: "main"
 
+  def install
+    bin.install "program"
+  end
 
   on_macos do
     if Hardware::CPU.intel?
