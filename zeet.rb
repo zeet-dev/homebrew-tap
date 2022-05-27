@@ -6,7 +6,7 @@ class Zeet < Formula
   desc "The Zeet CLI"
   homepage "https://zeet.co"
   version "0.4.1"
-  head "https://github.com/zeet-dev/cli.git"
+  head "https://github.com/zeet-dev/cli.git", branch: "main"
 
 
   on_macos do
